@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+## :video_game:Deus Ex CZ Mod 1112fm:video_game:
 
-You can use the [editor on GitHub](https://github.com/WarezzK/DeusExCZMod-1112fm/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Vítejte v projektu Deus Ex CZ Mod, obsahující češtinu na poslední verzi hry Steam, Gog nebo Retail včetně HD textur, HD modelů, vylepšených Rendererů
+DirectX 9, DirectX 10, OpenGL a optimalizaci na moderních systémech.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Důležité odkazy k projektu
 
-### Markdown
+_MODDB stránka projektu_<br />
+[Odkaz na MODDB](http://www.moddb.com/mods/deusexczmod-1112fm/)<br />
+_GITHUB stránka_<br />
+[Odkaz na GITHUB](https://warezzk.github.io/DeusExCZMod-1112fm/)<br />
+_Hlavní Web_<br />
+[WarezzK.cz](http://www.warezzk.cz/)<br />
+_DISCORD komunita_<br />
+[Pozvánka](https://discord.gg/k5AhwEJ/)<br /><br />
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+V tomto repozitáři můžete veřejně sledovat stav překladu a poskytovat feedback report, pokud naleznete nějakou chybu případně napsat svůj požadavek na vylepšení atd.
+Čeština zároveň vznikla jako modifikace, kde do budoucna je možno přidávat do hry další obsah.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/WarezzK/DeusExCZMod-1112fm/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+:video_game:"What a mess :))":video_game:
