@@ -17,4 +17,8 @@ _DISCORD komunita_<br />
 V tomto repozitáři můžete veřejně sledovat stav překladu a poskytovat feedback report, pokud naleznete nějakou chybu případně napsat svůj požadavek na vylepšení atd.
 Čeština zároveň vznikla jako modifikace, kde do budoucna je možno přidávat do hry další obsah.
 
+# CHANGELOG
+
+Provedené změny a jejich postup lze sledovat na této [adrese](https://warezzk.github.io/DeusExCZMod-1112fm/Changelog).<br />
+
 :video_game:"What a mess :))":video_game:
