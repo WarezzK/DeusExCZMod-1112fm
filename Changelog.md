@@ -7,7 +7,7 @@ moderní systémy od Kentie.net Hratelnost je nedotèená
 - Mod pøipraven pro budoucí modování, updaty a vylepšeování èeštiny
 
 ### Archivní zmìny - 06.03.2018
-_v0.2 BETA - 19.09.2016_
+_v0.2 BETA - 19.09.2016_<br />
 **OPRAVENO**: Vìtšina dialogových textù v pozdìjší fázi hry obsahovaly nesmyslné znaky. Opraveny všechny texty a dialogy a nahrazeny
 za texty s diakritikou
 
