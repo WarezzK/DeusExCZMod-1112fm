@@ -11,8 +11,8 @@ moderní systémy od Kentie.net Hratelnost je nedotčená
 - Mod připraven pro budoucí modování, updaty a vylepšeování češtiny
 
 ### Archivní změny - 06.03.2018
-_v0.2 BETA - 19.09.2016_<br />
-**OPRAVENO**: Většina dialogových textů v pozdější fázi hry obsahovaly nesmyslné znaky. Opraveny všechny texty a dialogy a nahrazeny za texty s diakritikou
+_v0.2 BETA - 19.09.2016_
+- **OPRAVENO**: Většina dialogových textů v pozdější fázi hry obsahovaly nesmyslné znaky. Opraveny všechny texty a dialogy a nahrazeny za texty s diakritikou
 
 _v0.1 BETA - 18.09.2016_
 - Vydání češtiny pro Vanilla verzi hry patch 1112fm
