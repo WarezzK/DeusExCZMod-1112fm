@@ -47,12 +47,14 @@ function DrawWindow(GC gc)
 {
 	gc.SetStyle(DSTY_Normal);
 
-	gc.DrawIcon(  0,   0, Texture'Demo_Splash_1');
-	gc.DrawIcon(256,   0, Texture'Demo_Splash_2');
-	gc.DrawIcon(512,   0, Texture'Demo_Splash_3');
-	gc.DrawIcon(  0, 256, Texture'Demo_Splash_4');
-	gc.DrawIcon(256, 256, Texture'Demo_Splash_5');
-	gc.DrawIcon(512, 256, Texture'Demo_Splash_6');
+// 08.03.2018
+// FIX chybejicich textur v menu
+	gc.DrawIcon(  0,   0, Texture'CZAnniversaryUI.UserInterface.Demo_Splash_1');
+	gc.DrawIcon(256,   0, Texture'CZAnniversaryUI.UserInterface.Demo_Splash_2');
+	gc.DrawIcon(512,   0, Texture'CZAnniversaryUI.UserInterface.Demo_Splash_3');
+	gc.DrawIcon(  0, 256, Texture'CZAnniversaryUI.UserInterface.Demo_Splash_4');
+	gc.DrawIcon(256, 256, Texture'CZAnniversaryUI.UserInterface.Demo_Splash_5');
+	gc.DrawIcon(512, 256, Texture'CZAnniversaryUI.UserInterface.Demo_Splash_6');
 }
 
 defaultproperties

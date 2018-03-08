@@ -569,7 +569,9 @@ defaultproperties
      slotNumberX=38
      slotNumberY=3
      texBackground=Texture'DeusExUI.UserInterface.HUDObjectBeltBackground_Cell'
-     mpBorderTex=Texture'DeusExUI.UserInterface.HUDObjectBeltBackground_Divider'
+     // 08.03.2018
+     // FIX chybejicich textur v menu
+     mpBorderTex=Texture'CZAnniversaryUI.UserInterface.HUDObjectBeltBackground_Divider'
      texBorders(0)=Texture'DeusExUI.UserInterface.PersonaItemHighlight_TL'
      texBorders(1)=Texture'DeusExUI.UserInterface.PersonaItemHighlight_TR'
      texBorders(2)=Texture'DeusExUI.UserInterface.PersonaItemHighlight_BL'

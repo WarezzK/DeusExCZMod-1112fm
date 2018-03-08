@@ -670,11 +670,13 @@ defaultproperties
      Title="Multiplayer Augmentation Setup"
      ClientWidth=537
      ClientHeight=311
-     clientTextures(0)=Texture'DeusExUI.UserInterface.MenuAugsBackground_1'
-     clientTextures(1)=Texture'DeusExUI.UserInterface.MenuAugsBackground_2'
-     clientTextures(2)=Texture'DeusExUI.UserInterface.MenuAugsBackground_3'
-     clientTextures(3)=Texture'DeusExUI.UserInterface.MenuAugsBackground_4'
-     clientTextures(4)=Texture'DeusExUI.UserInterface.MenuAugsBackground_5'
-     clientTextures(5)=Texture'DeusExUI.UserInterface.MenuAugsBackground_6'
+     // 08.03.2018
+     // FIX chybejicich textur v menu
+     clientTextures(0)=Texture'CZAnniversaryUI.UserInterface.MenuAugsBackground_1'
+     clientTextures(1)=Texture'CZAnniversaryUI.UserInterface.MenuAugsBackground_2'
+     clientTextures(2)=Texture'CZAnniversaryUI.UserInterface.MenuAugsBackground_3'
+     clientTextures(3)=Texture'CZAnniversaryUI.UserInterface.MenuAugsBackground_4'
+     clientTextures(4)=Texture'CZAnniversaryUI.UserInterface.MenuAugsBackground_5'
+     clientTextures(5)=Texture'CZAnniversaryUI.UserInterface.MenuAugsBackground_6'
      helpPosY=251
 }

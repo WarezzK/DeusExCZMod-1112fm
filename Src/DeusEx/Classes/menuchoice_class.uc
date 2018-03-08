@@ -164,10 +164,12 @@ defaultproperties
      ClassNames(1)="NSF Terrorist"
      ClassNames(2)="UNATCO Trooper"
      ClassNames(3)="Majestic-12 Agent"
-     texPortraits(0)=Texture'DeusExUI.UserInterface.menuplayersetupjcdenton'
-     texPortraits(1)=Texture'DeusExUI.UserInterface.menuplayersetupnsf'
-     texPortraits(2)=Texture'DeusExUI.UserInterface.menuplayersetupunatco'
-     texPortraits(3)=Texture'DeusExUI.UserInterface.menuplayersetupmj12'
+     // 08.03.2018
+     // FIX chybejicich textur v menu
+     texPortraits(0)=Texture'CZAnniversaryUI.UserInterface.menuplayersetupjcdenton'
+     texPortraits(1)=Texture'CZAnniversaryUI.UserInterface.menuplayersetupnsf'
+     texPortraits(2)=Texture'CZAnniversaryUI.UserInterface.menuplayersetupunatco'
+     texPortraits(3)=Texture'CZAnniversaryUI.UserInterface.menuplayersetupmj12'
      defaultInfoWidth=153
      defaultInfoPosX=170
      HelpText="Model for your character in non-team games."

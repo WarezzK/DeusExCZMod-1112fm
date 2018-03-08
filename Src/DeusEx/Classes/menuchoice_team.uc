@@ -173,9 +173,11 @@ defaultproperties
      TeamNames(0)="UNATCO"
      TeamNames(1)="NSF"
      TeamNames(2)="AUTO"
-     texPortraits(0)=Texture'DeusExUI.UserInterface.menuplayersetupunatco'
-     texPortraits(1)=Texture'DeusExUI.UserInterface.menuplayersetupnsf'
-     texPortraits(2)=Texture'DeusExUI.UserInterface.menuplayersetupautoteam'
+     // 08.03.2018
+     // FIX chybejicich textur v menu
+     texPortraits(0)=Texture'CZAnniversaryUI.UserInterface.menuplayersetupunatco'
+     texPortraits(1)=Texture'CZAnniversaryUI.UserInterface.menuplayersetupnsf'
+     texPortraits(2)=Texture'CZAnniversaryUI.UserInterface.menuplayersetupautoteam'
      defaultValue=2
      defaultInfoWidth=153
      defaultInfoPosX=170
