@@ -1,6 +1,6 @@
 ## Změny a úpravy českého překladu a modu
 
-_v1.0001a - 08.03.2018_
+_v1.0001a - 08.03.2018_<br />
 **OPRAVENO**: Chybějící textury v menu<br />
 **PŘIDÁNO**: Obarvení Deus Ex loga v menu na podobu České vlajky<br />
 
