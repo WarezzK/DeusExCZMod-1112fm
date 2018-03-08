@@ -1,8 +1,8 @@
 ## Změny a úpravy českého překladu a modu
 
 _v1.0001a - 08.03.2018_
-**OPRAVENO**: Chybějící textury v menu
-**PŘIDÁNO**: Obarvení Deus Ex loga v menu na podobu České vlajky
+**OPRAVENO**: Chybějící textury v menu<br />
+**PŘIDÁNO**: Obarvení Deus Ex loga v menu na podobu České vlajky<br />
 
 _v1.0001 - 05.03.2018_
 - Kompletní předělání Anniversary Modu (Instalace atd. Dále se jmenuje jen Deus Ex CZ Mod a Anniversary je jen z historického hlediska) a změna na verzi 1.0001
