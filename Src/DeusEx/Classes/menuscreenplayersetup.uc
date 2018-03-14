@@ -216,10 +216,6 @@ defaultproperties
      Title="Multiplayer Player Setup"
      ClientWidth=343
      ClientHeight=415
-     clientTextures(0)=Texture'CZAnniversaryUI.UserInterface.MenuPlayerSetupBackground_1'
-     clientTextures(1)=Texture'CZAnniversaryUI.UserInterface.MenuPlayerSetupBackground_2'
-     clientTextures(2)=Texture'CZAnniversaryUI.UserInterface.MenuPlayerSetupBackground_3'
-     clientTextures(3)=Texture'CZAnniversaryUI.UserInterface.MenuPlayerSetupBackground_4'
      textureCols=2
      helpPosY=353
 }

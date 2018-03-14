@@ -71,8 +71,5 @@ defaultproperties
      ClientWidth=258
      ClientHeight=257
      verticalOffset=2
-     clientTextures(0)=Texture'CZAnniversaryUI.UserInterface.MenuMultiplayerBackground_1'
-     clientTextures(1)=Texture'CZAnniversaryUI.UserInterface.MenuMultiplayerBackground_2'
-     clientTextures(2)=Texture'CZAnniversaryUI.UserInterface.MenuMultiplayerBackground_3'
      textureCols=2
 }

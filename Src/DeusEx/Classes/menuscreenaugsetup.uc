@@ -670,11 +670,5 @@ defaultproperties
      Title="Multiplayer Augmentation Setup"
      ClientWidth=537
      ClientHeight=311
-     clientTextures(0)=Texture'CZAnniversaryUI.UserInterface.MenuAugsBackground_1'
-     clientTextures(1)=Texture'CZAnniversaryUI.UserInterface.MenuAugsBackground_2'
-     clientTextures(2)=Texture'CZAnniversaryUI.UserInterface.MenuAugsBackground_3'
-     clientTextures(3)=Texture'CZAnniversaryUI.UserInterface.MenuAugsBackground_4'
-     clientTextures(4)=Texture'CZAnniversaryUI.UserInterface.MenuAugsBackground_5'
-     clientTextures(5)=Texture'CZAnniversaryUI.UserInterface.MenuAugsBackground_6'
      helpPosY=251
 }

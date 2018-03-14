@@ -964,12 +964,6 @@ defaultproperties
      Title="Start Multiplayer Game"
      ClientWidth=614
      ClientHeight=420
-     clientTextures(0)=Texture'CZAnniversaryUI.UserInterface.MenuJoinBackground_1'
-     clientTextures(1)=Texture'CZAnniversaryUI.UserInterface.MenuJoinBackground_2'
-     clientTextures(2)=Texture'CZAnniversaryUI.UserInterface.MenuJoinBackground_3'
-     clientTextures(3)=Texture'CZAnniversaryUI.UserInterface.MenuJoinBackground_4'
-     clientTextures(4)=Texture'CZAnniversaryUI.UserInterface.MenuJoinBackground_5'
-     clientTextures(5)=Texture'CZAnniversaryUI.UserInterface.MenuJoinBackground_6'
      helpPosY=378
      bTickEnabled=True
 }
