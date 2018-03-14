@@ -1,8 +1,8 @@
 [General]
-Start=Deus Ex (Starting)
-Exit=Deus Ex (Exiting)
-Run=Deus Ex (Running)
-Product=Deus Ex
+Start=Deus Ex + Shifter/BioMod/NanoMod (Starting)
+Exit=Deus Ex + Shifter/BioMod/NanoMod (Exiting)
+Run=Deus Ex + Shifter/BioMod/NanoMod (Running)
+Product=Deus Ex + Shifter/BioMod/NanoMod
 
 [Progress]
 Loading=Loading
@@ -13,7 +13,7 @@ FamiliarName="DEFAULT FAMILIAR NAME - REPORT THIS AS A BUG"
 UnfamiliarName="DEFAULT UNFAMILIAR NAME - REPORT THIS AS A BUG"
 
 [DeusExPlayer]
-InventoryFull="You don't have enough room in your inventory to pick up the %s"
+InventoryFull="You don't have enough room to pick up the %s"
 TooMuchAmmo="You already have enough of that type of ammo"
 TooHeavyToLift="It's too heavy to lift"
 CannotLift="You can't lift that"
@@ -26,7 +26,7 @@ GoalAdded="Goal Received - Check DataVault For Details"
 PrimaryGoalCompleted="Primary Goal Completed"
 SecondaryGoalCompleted="Secondary Goal Completed"
 EnergyDepleted="Bio-electric energy reserves depleted"
-AddedNanoKey="%s added to Nano Key Ring"
+AddedNanoKey="You got the %s NanoKey"
 HealedPointsLabel="Healed %d points"
 HealedPointLabel="Healed %d point"
 SkillPointsAward="%d skill points awarded"
@@ -64,6 +64,7 @@ SkillAtMaximum="Skill at Maximum Level"
 [AugmentationManager]
 AugLocationFull="You can't add any more augmentations to that location!"
 NoAugInSlot="There is no augmentation in that slot"
+HighPowerDrain="High power drain detected"
 
 [Augmentation]
 EnergyRateLabel="Energy Rate: %d Units/Minute"
@@ -130,30 +131,15 @@ msgInfoWeaponStats="Weapon Stats:"
 PickupMessage="You found"
 ItemName="DEFAULT WEAPON NAME - REPORT THIS AS A BUG"
 
-[DeusExCarcass]
-msgSearching="You found:"
-msgEmpty="You don't find anything"
-msgNotDead="Unconscious"
-msgAnimalCarcass="Animal Carcass"
-msgCannotPickup="You cannot pickup the %s"
-ItemName="Dead Body"
-msgRecharged="Recharged %d points"
-
 [DeusExMover]
-msgKeyLocked="Your NanoKey Ring locked it"
-msgKeyUnlocked="Your NanoKey Ring unlocked it"
+msgKeyLocked="Locked with the %s NanoKey"
+msgKeyUnlocked="Unlocked with the %s NanoKey"
 msgLockpickSuccess="You picked the lock"
 msgOneWayFail="It won't open from this side"
 msgLocked="It's locked"
 msgPicking="Picking the lock..."
 msgAlreadyUnlocked="It's already unlocked"
 msgNoNanoKey="Your NanoKey Ring doesn't have the right code"
-
-[DeusExPickup]
-CountLabel="COUNT:"
-msgTooMany="You can't carry any more of those"
-PickupMessage="You found"
-ItemName="DEFAULT PICKUP NAME - REPORT THIS AS A BUG"
 
 [MenuUIChoice]
 actionText="Choice"
@@ -387,7 +373,7 @@ UnequipButtonLabel="Un|&equip"
 UseButtonLabel="|&Use"
 DropButtonLabel="|&Drop"
 ChangeAmmoButtonLabel="Change Amm|&o"
-NanoKeyRingInfoText="Click icon to see a list of Nano Keys."
+NanoKeyRingInfoText="Click icon to see a list of NanoKeys."
 NanoKeyRingLabel="Keys: %s"
 DroppedLabel="%s dropped"
 AmmoLoadedLabel="%s loaded"
@@ -655,154 +641,10 @@ ActorButtonLabel="Contact"
 LocationButtonLabel="Location"
 TypeButtonLabel="Type"
 
-[MenuScreenCustomizeKeys]
-strHeaderActionLabel="Action"
-strHeaderAssignedLabel="Assigned Key/Button"
-WaitingHelpText="Select the function you wish to remap and then press [Enter] or Double-Click.  Press [Delete] to remove key bindings."
-InputHelpText="Please press the key or button you wish to assign to this function.  Press [ESC] to cancel."
-ReassignedFromLabel="'%s' reassigned from '%s'"
-Title="Keyboard/Mouse Settings"
-FunctionText[0]="Fire Weapon/Use object in hand"
-FunctionText[1]="Use object in world"
-FunctionText[2]="Drop/Throw Item"
-FunctionText[3]="Put Away Item"
-FunctionText[4]="Move Forward"
-FunctionText[5]="Move Backward"
-FunctionText[6]="Turn Left"
-FunctionText[7]="Turn Right"
-FunctionText[8]="Strafe Left"
-FunctionText[9]="Strafe Right"
-FunctionText[10]="Lean Left"
-FunctionText[11]="Lean Right"
-FunctionText[12]="Jump"
-FunctionText[13]="Crouch"
-FunctionText[14]="Mouse Look"
-FunctionText[15]="Look Up"
-FunctionText[16]="Look Down"
-FunctionText[17]="Center View"
-FunctionText[18]="Walk/Run"
-FunctionText[19]="Toggle Walk/Run"
-FunctionText[20]="Strafe"
-FunctionText[21]="Select Next Belt Item"
-FunctionText[22]="Select Previous Belt Item"
-FunctionText[23]="Reload Weapon"
-FunctionText[24]="Toggle Scope"
-FunctionText[25]="Toggle Laser Sight"
-FunctionText[26]="Activate All Augmentations"
-FunctionText[27]="Deactivate All Augmentations"
-FunctionText[28]="Change Ammo"
-FunctionText[29]="Take Screenshot"
-FunctionText[30]="Activate Inventory Screen"
-FunctionText[31]="Activate Health Screen"
-FunctionText[32]="Activate Augmentations Screen"
-FunctionText[33]="Activate Skills Screen"
-FunctionText[34]="Activate Goals/Notes Screen"
-FunctionText[35]="Activate Conversations Screen"
-FunctionText[36]="Activate Images Screen"
-FunctionText[37]="Activate Logs Screen"
-FunctionText[38]="Quick Save"
-FunctionText[39]="Quick Load"
-FunctionText[40]="Toggle Crosshairs"
-FunctionText[41]="Toggle Hit Display"
-FunctionText[42]="Toggle Compass"
-FunctionText[43]="Toggle Augmentation Display"
-FunctionText[44]="Toggle Object Belt"
-FunctionText[45]="Toggle Ammo Display"
-keyDisplayNames[0]="(inputKey=IK_LeftMouse,displayName="Left Mouse Button")"
-keyDisplayNames[1]="(inputKey=IK_RightMouse,displayName="Right Mouse Button")"
-keyDisplayNames[2]="(inputKey=IK_MiddleMouse,displayName="Middle Mouse Button")"
-keyDisplayNames[3]="(inputKey=IK_CapsLock,displayName="CAPS Lock")"
-keyDisplayNames[4]="(inputKey=IK_PageUp,displayName="Page Up")"
-keyDisplayNames[5]="(inputKey=IK_PageDown,displayName="Page Down")"
-keyDisplayNames[6]="(inputKey=IK_PrintScrn,displayName="Print Screen")"
-keyDisplayNames[7]="(inputKey=IK_GreyStar,displayName="NumPad Asterisk")"
-keyDisplayNames[8]="(inputKey=IK_GreyPlus,displayName="NumPad Plus")"
-keyDisplayNames[9]="(inputKey=IK_GreyMinus,displayName="NumPad Minus")"
-keyDisplayNames[10]="(inputKey=IK_GreySlash,displayName="NumPad Slash")"
-keyDisplayNames[11]="(inputKey=IK_NumPadPeriod,displayName="NumPad Period")"
-keyDisplayNames[12]="(inputKey=IK_NumLock,displayName="Num Lock")"
-keyDisplayNames[13]="(inputKey=IK_ScrollLock,displayName="Scroll Lock")"
-keyDisplayNames[14]="(inputKey=IK_LShift,displayName="Left Shift")"
-keyDisplayNames[15]="(inputKey=IK_RShift,displayName="Right Shift")"
-keyDisplayNames[16]="(inputKey=IK_LControl,displayName="Left Control")"
-keyDisplayNames[17]="(inputKey=IK_RControl,displayName="Right Control")"
-keyDisplayNames[18]="(inputKey=IK_MouseWheelUp,displayName="Mouse Wheel Up")"
-keyDisplayNames[19]="(inputKey=IK_MouseWheelDown,displayName="Mouse Wheel Down")"
-keyDisplayNames[20]="(inputKey=IK_MouseX,displayName="Mouse X")"
-keyDisplayNames[21]="(inputKey=IK_MouseY,displayName="Mouse Y")"
-keyDisplayNames[22]="(inputKey=IK_MouseZ,displayName="Mouse Z")"
-keyDisplayNames[23]="(inputKey=IK_MouseW,displayName="Mouse W")"
-keyDisplayNames[24]="(inputKey=IK_LeftBracket,displayName="Left Bracket")"
-keyDisplayNames[25]="(inputKey=IK_RightBracket,displayName="Right Bracket")"
-keyDisplayNames[26]="(inputKey=IK_SingleQuote,displayName="Single Quote")"
-keyDisplayNames[27]="(inputKey=IK_Joy1,displayName="Joystick Button 1")"
-keyDisplayNames[28]="(inputKey=IK_Joy2,displayName="Joystick Button 2")"
-keyDisplayNames[29]="(inputKey=IK_Joy3,displayName="Joystick Button 3")"
-keyDisplayNames[30]="(inputKey=IK_Joy4,displayName="Joystick Button 4")"
-keyDisplayNames[31]="(inputKey=IK_JoyX,displayName="Joystick X")"
-keyDisplayNames[32]="(inputKey=IK_JoyY,displayName="Joystick Y")"
-keyDisplayNames[33]="(inputKey=IK_JoyZ,displayName="Joystick Z")"
-keyDisplayNames[34]="(inputKey=IK_JoyR,displayName="Joystick R")"
-keyDisplayNames[35]="(inputKey=IK_JoyU,displayName="Joystick U")"
-keyDisplayNames[36]="(inputKey=IK_JoyV,displayName="Joystick V")"
-keyDisplayNames[37]="(inputKey=IK_JoyPovUp,displayName="Joystick Pov Up")"
-keyDisplayNames[38]="(inputKey=IK_JoyPovDown,displayName="Joystick Pov Down")"
-keyDisplayNames[39]="(inputKey=IK_JoyPovLeft,displayName="Joystick Pov Left")"
-keyDisplayNames[40]="(inputKey=IK_JoyPovRight,displayName="Joystick Pov Right")"
-keyDisplayNames[41]="(inputKey=IK_Ctrl,displayName="Control")"
-keyDisplayNames[42]="(inputKey=IK_Left,displayName="Left Arrow")"
-keyDisplayNames[43]="(inputKey=IK_Right,displayName="Right Arrow")"
-keyDisplayNames[44]="(inputKey=IK_Up,displayName="Up Arrow")"
-keyDisplayNames[45]="(inputKey=IK_Down,displayName="Down Arrow")"
-keyDisplayNames[46]="(inputKey=IK_Insert,displayName="Insert")"
-keyDisplayNames[47]="(inputKey=IK_Home,displayName="Home")"
-keyDisplayNames[48]="(inputKey=IK_Delete,displayName="Delete")"
-keyDisplayNames[49]="(inputKey=IK_End,displayName="End")"
-keyDisplayNames[50]="(inputKey=IK_NumPad0,displayName="NumPad 0")"
-keyDisplayNames[51]="(inputKey=IK_NumPad1,displayName="NumPad 1")"
-keyDisplayNames[52]="(inputKey=IK_NumPad2,displayName="NumPad 2")"
-keyDisplayNames[53]="(inputKey=IK_NumPad3,displayName="NumPad 3")"
-keyDisplayNames[54]="(inputKey=IK_NumPad4,displayName="NumPad 4")"
-keyDisplayNames[55]="(inputKey=IK_NumPad5,displayName="NumPad 5")"
-keyDisplayNames[56]="(inputKey=IK_NumPad6,displayName="NumPad 6")"
-keyDisplayNames[57]="(inputKey=IK_NumPad7,displayName="NumPad 7")"
-keyDisplayNames[58]="(inputKey=IK_NumPad8,displayName="NumPad 8")"
-keyDisplayNames[59]="(inputKey=IK_NumPad9,displayName="NumPad 9")"
-keyDisplayNames[60]="(inputKey=IK_Period,displayName="Period")"
-keyDisplayNames[61]="(inputKey=IK_Comma,displayName="Comma")"
-keyDisplayNames[62]="(inputKey=IK_Backslash,displayName="Backslash")"
-keyDisplayNames[63]="(inputKey=IK_Semicolon,displayName="Semicolon")"
-keyDisplayNames[64]="(inputKey=IK_Equals,displayName="Equals")"
-keyDisplayNames[65]="(inputKey=IK_Slash,displayName="Slash")"
-keyDisplayNames[66]="(inputKey=IK_Enter,displayName="Enter")"
-keyDisplayNames[67]="(inputKey=IK_Alt,displayName="Alt")"
-keyDisplayNames[68]="(inputKey=IK_Backspace,displayName="Backspace")"
-keyDisplayNames[69]="(inputKey=IK_Shift,displayName="Shift")"
-keyDisplayNames[70]="(inputKey=IK_Space,displayName="Space")"
-actionButtons[0]="(Align=HALIGN_Right,Action=AB_Cancel)"
-actionButtons[1]="(Align=HALIGN_Right,Action=AB_OK)"
-actionButtons[2]="(Action=AB_Reset)"
-NoneText="[None]"
-FunctionText[46]="F3"
-FunctionText[47]="F4"
-FunctionText[48]="F5"
-FunctionText[49]="F6"
-FunctionText[50]="F7"
-FunctionText[51]="F8"
-FunctionText[52]="F9"
-FunctionText[53]="F10"
-FunctionText[54]="F11"
-FunctionText[55]="F12"
-FunctionText[56]="Show Multiplayer Scores"
-FunctionText[57]="Send Message To Team"
-FunctionText[58]="Send Message To All"
-FunctionText[59]="Activate Multiplayer Skill Menu"
-FunctionText[60]="Show Multiplayer Kill Details"
-
 [NanoKeyRing]
-NoKeys="No Nano Keys Available!"
-KeysAvailableLabel="Nano Keys Available:"
-ItemName="Nanokey Ring"
+NoKeys="No NanoKeys Available!"
+KeysAvailableLabel="NanoKeys Available:"
+ItemName="NanoKey Ring"
 ItemArticle="the"
 Description="A nanokey ring can read and store the two-dimensional molecular patterns from different nanokeys, and then recreate those patterns on demand."
 beltDescription="KEY RING"
@@ -933,10 +775,6 @@ ItemName="Fire Extinguisher"
 Description="A chemical fire extinguisher."
 beltDescription="FIRE EXT"
 
-[AugLight]
-AugmentationName="Light"
-Description="Bioluminescent cells within the retina provide coherent illumination of the agent's field of view.|n|nNO UPGRADES"
-
 [ComputerScreenHackAccounts]
 ChangeAccountButtonLabel="|&Change Account"
 AllAccountsHeader="All User Accounts"
@@ -951,15 +789,6 @@ beltDescription="BUCKSHOT"
 [AnnaNavarre]
 FamiliarName="Anna Navarre"
 UnfamiliarName="Anna Navarre"
-
-[HUDMedBotAddAugsScreen]
-AvailableAugsText="Available Augmentations"
-MedbotInterfaceText="MEDBOT INTERFACE"
-InstallButtonLabel="|&Install"
-NoCansAvailableText="No Augmentation Cannisters Available!"
-AlreadyHasItText="You already have this augmentation, therefore you cannot install it a second time."
-SlotFullText="The slot that this augmentation occupies is already full, therefore you cannot install it."
-SelectAnotherText="Please select another augmentation to install."
 
 [CleanerBot]
 FamiliarName="Cleaner Bot"
@@ -1045,12 +874,6 @@ actionText="|&Screen Resolution"
 [PersonaItemDetailIconWindow]
 CountLabel="Count: %d"
 
-[VendingMachine]
-msgDispensed="2 credits deducted from your account"
-msgNoCredits="Costs 2 credits..."
-msgEmpty="It's empty"
-ItemName="Vending Machine"
-
 [PersonaScreenSkills]
 SkillsTitleText="Skills"
 UpgradeButtonLabel="|&Upgrade"
@@ -1087,12 +910,6 @@ AugContainsText="Contains:|n"
 AugmentationName="Aggressive Defense System"
 Description="Aerosol nanoparticles are released upon the detection of objects fitting the electromagnetic threat profile of missiles and grenades; these nanoparticles will prematurely detonate such objects prior to reaching the agent.|n|nTECH ONE: The range at which incoming rockets and grenades are detonated is short.|n|nTECH TWO: The range at which detonation occurs is increased slightly.|n|nTECH THREE: The range at which detonation occurs is increased moderately.|n|nTECH FOUR: Rockets and grenades are detonated almost before they are fired."
 MPInfo="When active, enemy rockets detonate when they get close, doing reduced damage.  Some large rockets may still be close enough to do damage when they explode.  Energy Drain: Low"
-
-[CigaretteMachine]
-msgDispensed="8 credits deducted from your account"
-msgNoCredits="Costs 8 credits..."
-msgEmpty="It's empty"
-ItemName="Cigarette Machine"
 
 [RiotCop]
 FamiliarName="Riot Cop"
@@ -1175,11 +992,11 @@ ButtonNames[0]="New Game"
 ButtonNames[1]="Save Game"
 ButtonNames[2]="Load Game"
 ButtonNames[3]="Settings"
-ButtonNames[4]="Training"
-ButtonNames[5]="Play Intro"
-ButtonNames[6]="Credits"
-ButtonNames[7]="Back to Game"
-ButtonNames[8]="Multiplayer"
+ButtonNames[4]="NanoMod"
+ButtonNames[5]="Training"
+ButtonNames[6]="Challenges"
+ButtonNames[7]="Credits"
+ButtonNames[8]="Back to Game"
 ButtonNames[9]="Exit"
 
 [LAM]
@@ -1233,11 +1050,6 @@ UnfamiliarName="Woman In Black"
 [MIB]
 FamiliarName="Man In Black"
 UnfamiliarName="Man In Black"
-
-[AugMuscle]
-AugmentationName="Microfibral Muscle"
-Description="Muscle strength is amplified with ionic polymeric gel myofibrils that allow the agent to push and lift extraordinarily heavy objects.|n|nTECH ONE: Strength is increased slightly.|n|nTECH TWO: Strength is increased moderately.|n|nTECH THREE: Strength is increased significantly.|n|nTECH FOUR: An agent is inhumanly strong."
-MPInfo="When active, you can pick up large crates.  Energy Drain: Low"
 
 [DeathMatchGame]
 TooManyPlayers=Too many players
@@ -1404,11 +1216,6 @@ ItemName="Weapon Modification (Clip)"
 Description="An extended magazine that increases clip capacity beyond the factory default."
 beltDescription="MOD CLIP"
 
-[VialCrack]
-ItemName="Zyme Vial"
-Description="A vial of zyme, brewed up in some basement lab."
-beltDescription="ZYME"
-
 [HazMatSuit]
 ExpireMessage="HazMatSuit power supply used up"
 ItemName="Hazmat Suit"
@@ -1462,20 +1269,20 @@ beltDescription="CHARGER"
 
 [AugDrone]
 AugmentationName="Spy Drone"
-Description="Advanced nanofactories can assemble a spy drone upon demand which can then be remotely controlled by the agent until released or destroyed, at which a point a new drone will be assembled. Further upgrades equip the spy drones with better armor and a one-shot EMP attack.|n|nTECH ONE: The drone can take little damage and has a very light EMP attack.|n|nTECH TWO: The drone can take minor damage and has a light EMP attack.|n|nTECH THREE: The drone can take moderate damage and has a medium EMP attack.|n|nTECH FOUR: The drone can take heavy damage and has a strong EMP attack."
+Description="Advanced nanofactories can assemble a spy drone upon demand which can then be remotely controlled by the agent until released or destroyed, at which a point a new drone will be assembled.|n|nTECH ONE: The drone moves slowly and has a very light EMP attack.|n|nTECH TWO: The drone gains the ability to gather intel from datacubes, gets a slight speed boost, and has a light EMP attack.|n|nTECH THREE: The drone can interact with simple objects such as buttons, gets a moderate speed boost and has a medium EMP attack.|n|nTECH FOUR: The drone can operate computers, gets a large speed boost and has a strong EMP attack."
 MPInfo="Activation creates a remote-controlled spy drone.  Deactivation disables the drone.  Firing while active detonates the drone in a massive EMP explosion.  Energy Drain: Medium"
 
 [Basketball]
 ItemName="Basketball"
 
 [AugCombat]
-AugmentationName="Combat Strength"
-Description="Sorting rotors accelerate calcium ion concentration in the sarcoplasmic reticulum, increasing an agent's muscle speed several-fold and multiplying the damage they inflict in melee combat.|n|nTECH ONE: The effectiveness of melee weapons is increased slightly.|n|nTECH TWO: The effectiveness of melee weapons is increased moderately.|n|nTECH THREE: The effectiveness of melee weapons is increased significantly.|n|nTECH FOUR: Melee weapons are almost instantly lethal."
-MPInfo="When active, you do double damage with melee weapons.  Energy Drain: Low"
+AugmentationName="Electrostatic Discharge"
+Description="Nanomolecular capacitors under the skin store bioelectric energy in the agent's hands, discharging bursts of static electricity during hand-to-hand combat.|n|nTECH ONE: Melee weapons inflict a low amount of EMP damage.|n|n|TECH TWO: Melee weapons inflict a moderate amount of EMP damage and can disrupt the AI routines of some bots.|n|nTECH THREE: Melee weapons inflict a moderate amount of EMP damage and can disrupt the AI routines of most bots.|n|nTECH FOUR: The agent can take out a dozen bots with a toothpick."
+MPInfo="When active, melee weapons do EMP damage.  Energy Drain: Low"
 
 [AugAqualung]
 AugmentationName="Aqualung"
-Description="Soda lime exostructures imbedded in the alveoli of the lungs convert CO2 to O2, extending the time an agent can remain underwater.|n|nTECH ONE: Lung capacity is extended slightly.|n|nTECH TWO: Lung capacity is extended moderately.|n|nTECH THREE: Lung capacity is extended significantly.|n|nTECH FOUR: An agent can stay underwater indefinitely."
+Description="Soda lime exostructures imbedded in the alveoli of the lungs convert CO2 to O2, extending the time an agent can remain underwater, recovering some energy in the process.|n|nTECH ONE: Lung capacity is extended slightly.|n|nTECH TWO: Lung capacity is extended moderately and a small amount of energy is recovered.|n|nTECH THREE: Lung capacity is extended significantly and a moderate amount of energy is recovered.|n|nTECH FOUR: An agent can stay underwater indefinitely and recover a significant amount of energy."
 MPInfo="When active, you can stay underwater 12 times as long and swim twice as fast.  Energy Drain: Low"
 
 [RetinalScanner]
@@ -1554,12 +1361,6 @@ ItemArticle="some"
 Description="Fine print: 'Seasoned with nanoscale mechanochemical generators, this TSP (textured soy protein) not only tastes good but also self-heats when its package is opened.'"
 beltDescription="SOY FOOD"
 
-[Sodacan]
-ItemName="Soda"
-ItemArticle="some"
-Description="The can is blank except for the phrase 'PRODUCT PLACEMENT HERE.' It is unclear whether this is a name or an invitation."
-beltDescription="SODA"
-
 [BookOpen]
 ItemName="Book"
 
@@ -1634,9 +1435,6 @@ ItemName="Telephone"
 [Toilet2]
 ItemName="Urinal"
 
-[Toilet]
-ItemName="Toilet"
-
 [Switch1]
 ItemName="Switch"
 
@@ -1674,11 +1472,6 @@ ItemArticle="some"
 Description="A favorite weapon of assassins in the Far East for centuries, throwing knives can be deadly when wielded by a master but are more generally used when it becomes desirable to send a message. The message is usually 'Your death is coming on swift feet.'"
 beltDescription="THW KNIFE"
 
-[WeaponSawedOffShotgun]
-ItemName="Sawed-off Shotgun"
-Description="The sawed-off, pump-action shotgun features a truncated barrel resulting in a wide spread at close range and will accept either buckshot or sabot shells."
-beltDescription="SAWED-OFF"
-
 [MenuScreenAdjustColors]
 Title="Adjust Colors"
 actionButtons[0]="(Align=HALIGN_Right,Action=AB_Cancel)"
@@ -1702,12 +1495,6 @@ UnfamiliarName="Mini-SpiderBot"
 [HowardStrong]
 FamiliarName="Howard Strong"
 UnfamiliarName="Howard Strong"
-
-[WeaponAssaultShotgun]
-ItemName="Assault Shotgun"
-ItemArticle="an"
-Description="The assault shotgun (sometimes referred to as a 'street sweeper') combines the best traits of a normal shotgun with a fully automatic feed that can clear an area of hostiles in a matter of seconds. Particularly effective in urban combat, the assault shotgun accepts either buckshot or sabot shells."
-beltDescription="SHOTGUN"
 
 [WeaponFlamethrower]
 ItemName="Flamethrower"
@@ -1791,10 +1578,6 @@ AugmentationName="Environmental Resistance"
 Description="Induced keratin production strengthens all epithelial tissues and reduces the agent's vulnerability to radiation and other toxins.|n|nTECH ONE: Toxic resistance is increased slightly.|n|nTECH TWO: Toxic resistance is increased moderately.|n|nTECH THREE: Toxic resistance is increased significantly.|n|nTECH FOUR: An agent is nearly invulnerable to damage from toxins."
 MPInfo="When active, you only take 10% damage from poison and gas, and poison and gas will not affect your vision.  Energy Drain: Low"
 
-[AugIFF]
-AugmentationName="IFF"
-Description="Automatic friend or foe identification uses advanced heuristic algorithms to associate visible objects with known threat categories.|n|nTargeting reticle highlights RED over enemies, and GREEN over allies and neutrals.|n|nNO UPGRADES"
-
 [AugShield]
 AugmentationName="Energy Shield"
 Description="Polyanilene capacitors below the skin absorb heat and electricity, reducing the damage received from flame, electrical, and plasma attacks.|n|nTECH ONE: Damage from energy attacks is reduced slightly.|n|nTECH TWO: Damage from energy attacks is reduced moderately.|n|nTECH THREE: Damage from energy attacks is reduced significantly.|n|nTECH FOUR: An agent is nearly invulnerable to damage from energy attacks."
@@ -1807,7 +1590,7 @@ MPInfo="When active, you do not make footstep sounds.  Energy Drain: Low"
 
 [AugTarget]
 AugmentationName="Targeting"
-Description="Image-scaling and recognition provided by multiplexing the optic nerve with doped polyacetylene 'quantum wires' not only increases accuracy, but also delivers limited situational info about a target.|n|nTECH ONE: Slight increase in accuracy and general target information.|n|nTECH TWO: Additional increase in accuracy and more target information.|n|nTECH THREE: Additional increase in accuracy and specific target information.|n|nTECH FOUR: Additional increase in accuracy and telescopic vision."
+Description="Image-scaling and recognition provided by multiplexing the optic nerve with doped polyacetylene 'quantum wires' delivers limited situational info about a target and a small accuracy boost.|n|nTECH ONE: Minimal increase in accuracy and general target information, coupled with minimal telescopic vision.|n|nTECH TWO: Slight increase in accuracy, telescopic vision, and more target information.|n|nTECH THREE: Additional increase in accuracy, telescopic vision, and specific target information.|n|nTECH FOUR: Video feed transmission and additional increase in accuracy and telescopic vision."
 MPInfo="When active, all weapon skills are effectively increased by one level, and you can see an enemy's health.  The skill increases allow you to effectively surpass skill level 3.  Energy Drain: Moderate"
 
 [AcousticSensor]
@@ -2064,10 +1847,6 @@ beltDescription="SCRM GREN"
 FamiliarName="Pigeon"
 UnfamiliarName="Pigeon"
 
-[AugHeartLung]
-AugmentationName="Synthetic Heart"
-Description="This synthetic heart circulates not only blood but a steady concentration of mechanochemical power cells, smart phagocytes, and liposomes containing prefab diamondoid machine parts, resulting in upgraded performance for all installed augmentations.|n|n<UNATCO OPS FILE NOTE JR133-VIOLET> However, this will not enhance any augmentation past its maximum upgrade level. -- Jaime Reyes <END NOTE>|n|nNO UPGRADES"
-
 [Seagull]
 FamiliarName="Seagull"
 UnfamiliarName="Seagull"
@@ -2133,7 +1912,7 @@ beltDescription="WP ROCKET"
 
 [AugHealing]
 AugmentationName="Regeneration"
-Description="Programmable polymerase automatically directs construction of proteins in injured cells, restoring an agent to full health over time.|n|nTECH ONE: Healing occurs at a normal rate.|n|nTECH TWO: Healing occurs at a slightly faster rate.|n|nTECH THREE: Healing occurs at a moderately faster rate.|n|nTECH FOUR: Healing occurs at a significantly faster rate."
+Description="Programmable polymerase automatically directs construction of proteins in injured cells, restoring an agent to full health over time.  There is a delay while the polymerase reconfigures itself to address the injured cells.  Further damage will disrupt the process, causing it to start over.|n|nTECH ONE: Healing occurs after a long delay.|n|nTECH TWO: Healing occurs after a slightly shorter delay.|n|nTECH THREE: Healing occurs after a moderately shorter delay.|n|nTECH FOUR: Healing occurs almost immediately."
 MPInfo="When active, you heal, but at a rate insufficient for healing in combat.  Energy Drain: High"
 
 [AugVision]
@@ -2689,7 +2468,7 @@ Description="The use of rifles, including assault rifles, sniper rifles, and sho
 
 [SkillDemolition]
 SkillName="Weapons: Demolition"
-Description="The use of thrown explosive devices, including LAMs, gas grenades, EMP grenades, and even electronic scramble grenades.|n|nUNTRAINED: An agent can throw grenades, attach them to a surface as a proximity device, or attempt to disarm and remove a previously armed proximity device.|n|nTRAINED: Grenade accuracy and damage increases slightly, as does the safety margin for disarming proximity devices.|n|nADVANCED: Grenade accuracy and damage increases moderately, as does the safety margin for disarming proximity devices.|n|nMASTER: An agent is an expert at all forms of demolition."
+Description="The use of thrown explosive devices, including LAMs, gas grenades, EMP grenades, and even electronic scramble grenades.|n|nUNTRAINED: An agent can throw grenades, attach them to a surface as a proximity device, or attempt to disarm and remove a previously armed proximity device.|n|nTRAINED: Grenade damage and disarming effectiveness increases slightly, as does the number of grenades an agent can safely carry.|n|nADVANCED: Grenade damage and disarming effectiveness increases moderately, as does the number of grenades an agent can safely carry.|n|nMASTER: An agent is an expert at all forms of demolition."
 
 [SkillWeaponPistol]
 SkillName="Weapons: Pistol"
@@ -2700,12 +2479,12 @@ SkillName="Weapons: Heavy"
 Description="The use of heavy weaponry, including flamethrowers, LAWs, and the experimental plasma and GEP guns.|n|nUNTRAINED: An agent can use heavy weaponry, but their accuracy is low and movement is difficult.|n|nTRAINED: Accuracy and damage increases slightly, while reloading and movement is somewhat faster.|n|nADVANCED: Accuracy and damage increases moderately, while reloading and movement is even more rapid.|n|nMASTER: An agent is a walking tank when equipped with heavy weaponry."
 
 [SkillSwimming]
-SkillName="Swimming"
-Description="Underwater operations require their own unique set of skills that must be developed by an agent with extreme physical dedication.|n|nUNTRAINED: An agent can swim normally.|n|nTRAINED: The swimming speed and lung capacity of an agent increases slightly.|n|nADVANCED:  The swimming speed and lung capacity of an agent increases moderately.|n|nMASTER: An agent moves like a dolphin underwater."
+SkillName="Athletics"
+Description="Peak physical fitness can only be obtained by agents with a strict regimen of diet and exercise.|n|nUNTRAINED: An agent is of average fitness.|n|nTRAINED: The running speed, jump height and swimming performance of an agent increases slightly.|n|nADVANCED: An agent gains the ability to scale any ledge in full combat gear, as well as moderately increased swimming performance.|n|nMASTER: An agent can compete in a triathlon."
 
 [SkillComputer]
 SkillName="Computer"
-Description="The covert manipulation of computers and security consoles.|n|nUNTRAINED: An agent can use terminals to read bulletins and news.|n|nTRAINED: An agent can hack ATMs, computers, and security consoles.|n|nADVANCED: An agent achieves a moderate increase in detection countdowns and a moderate decrease in lockout times, as well as gaining the ability to control automated gun turrets.|n|nMASTER: An agent is an elite hacker that few systems can withstand."
+Description="The covert manipulation of computers and security consoles.|n|nUNTRAINED: An agent can use terminals to read bulletins and news.|n|nTRAINED: An agent can hack regular ATMs, computers, and security consoles.|n|nADVANCED: An agent achieves a moderate increase in detection countdowns and a moderate decrease in lockout times. An agent also gains abilities to hack into terminals with a higher security rating, most terminals with special functions, and an ability to control automated gun turrets.|n|nMASTER: An agent is an elite hacker that few systems can withstand."
 
 [SkillTech]
 SkillName="Electronics"
@@ -2718,7 +2497,7 @@ Description="Lockpicking is as much art as skill, but with intense study it can 
 
 [SkillMedicine]
 SkillName="Medicine"
-Description="Practical knowledge of human physiology can be applied by an agent in the field allowing more efficient use of medkits.|n|nUNTRAINED: An agent can use medkits.|n|nTRAINED: An agent can heal slightly more damage and reduce the period of toxic poisoning.|n|nADVANCED: An agent can heal moderately more damage and further reduce the period of toxic poisoning.|n|nMASTER: An agent can perform a heart bypass with household materials."
+"Practical knowledge of human physiology can be applied by an agent in the field allowing more efficient use of medkits and bioelectric cells.|n|nUNTRAINED: An agent can use medkits and biocells.|n|nTRAINED: An agent can heal slightly more damage or energy and reduce the period of toxic poisoning.|n|nADVANCED: An agent can heal moderately more damage or energy and further reduce the period of toxic poisoning.|n|nMASTER: An agent can perform a heart bypass with household materials."
 
 [Image12_Tiffany_HostagePic]
 imageDescription="Tiffany Hostage Picture"
@@ -2739,7 +2518,7 @@ imageDescription="Walton Simons"
 imageDescription="Millenium Magazine"
 
 [Image15_GrayDisection]
-imageDescription="Gray Disection"
+imageDescription="Gray Dissection"
 
 [Image15_Area51Bunker]
 imageDescription="Area 51 Bunker"
@@ -2799,7 +2578,7 @@ imageDescription="Hong Kong Market"
 imageDescription="MJ12 Lab Facility"
 
 [Image05_GreaselDisection]
-imageDescription="Greasel Disection"
+imageDescription="Greasel Dissection"
 
 [Image04_UNATCONotice]
 imageDescription="UNATCO Notice"
@@ -3105,14 +2884,6 @@ HelpText="Type of server to run.  Dedicated servers do not have a local player, 
 actionText="Server Mode"
 configSetting="MenuScreenHostGame ServerMode"
 
-[menuchoice_class]
-ClassNames[0]="JC Denton"
-ClassNames[1]="NSF Terrorist"
-ClassNames[2]="UNATCO Trooper"
-ClassNames[3]="Majestic-12 Agent"
-HelpText="Model for your character in non-team games."
-actionText="Non-Team Model"
-
 [menuchoice_connection]
 ConnectionNames[0]="Modem"
 ConnectionNames[1]="DSL or better"
@@ -3181,3 +2952,480 @@ HelpText="Percentage of full damage received from friendly fire."
 actionText="Friendly Fire"
 configSetting="DeusExMPGame fFriendlyFireMult"
 
+
+
+
+[Ammo10mmEX]
+ItemName="Explosive 10mm Ammo"
+Description="By tipping standard 10mm rounds with a modest amount of magnesium, an average handgun can take down a wide range of targets, including bots.  The United Nations has banned the sale and use of explosive rounds for this reason."
+beltDescription="EXP AMMO"
+
+[AmmoCombatKnife]
+ItemName="Combat Knife"
+ItemArticle="a"
+
+[AmmoRocketMini]
+ItemName="Light Rockets"
+ItemArticle="some"
+Description="A lighter version of the standard Guided Explosive Projectile.  As such it carries a smaller explosive charge than a standard GEP."
+beltDescription="L-ROCKET"
+
+[AugSkullGun]
+AugmentationName="Skull Gun"
+Description="Nanomolecular fabricators generate a large mass of plastic at the exterior of the cranium, superheating it to plasma just after ejecting it along the agent's line of sight.|n|nTECH ONE: Agent can generate one shot before exhausting energy reserves.|n|nTECH TWO: Energy drain is halved and damage increased.|n|nTECH THREE: Energy drain is reduced by one third and damage is increased.|n|nTECH FOUR: Agent can deploy 4 bursts of high-damage plasma before exhausting energy reserves."
+MPInfo="Fires a burst of plasma from the cranial area.  Energy Drain: Incredibly High"
+
+[VendingMachineSpec1]
+msgDispErr1="%d credits decuttttt!3kd@t]]i8n^ ERROR -- FOREIGN OBJECT DETECTED"
+msgDispErr2="%d cre4di7ts ded0uct3ed fr3669om your acco322222 PLEASE WAIT -- RESTORING FACTORY DEFAULTS"
+
+[VialVirus]
+ItemName="Gray Death Vial"
+ItemArticle="a"
+Description="A small vial of the 'Gray Death' virus, so named because of the severe pale complexion of those afflicted with the disease."
+beltDescription="GRAY DEATH"
+
+[WeaponBlackjack]
+ItemArticle="Paul's"
+ItemName="Blackjack"
+Description="A standard Baton, modified by Paul to be a formidable weapon while still meeting his non-lethal weapon needs.  The interior has been filled with a heavy material, possibly lead shot or even iron rebar for authenticity."
+beltDescription="BLACKJACK"
+
+[WeaponBoomstick]
+ItemArticle="the"
+ItemName="Boomstick"
+Description="A Sawed-off Shotgun, heavily modified by Jock for improved accuracy, higher damage, and minimal recoil.  The name is a testament to Jock's strange taste in movies."
+beltDescription="BOOMSTICK"
+
+[WeaponJackHammer]
+ItemArticle="the"
+ItemName="Jackhammer"
+Description="A product of Smuggler's extreme if not appropriate paranoia, the JackHammer is a fully automatic shotgun capable of exhausting a full clip in just under a second.  Unfortunately, Smuggler didn't have time to expand the clip capacity."
+beltDescription="JACKHAMMER"
+
+[WeaponLoBruto]
+ItemArticle="the"
+ItemName="Lo Bruto"
+Description="A further modified Stealth Pistol with improved damage and accuracy, taken from JoJo Fine.  JoJo's poor modification skills are evident, as the improved damage came at the cost of clip size, recoil, and speed."
+beltDescription="LO BRUTO"
+
+[WeaponMagnum]
+ItemName="Magnum"
+Description="A variant of the 10mm pistol, modified to produce a higher bullet velocity.|n|n<UNATCO OPS FILE NOTE SC357-BLUE> Magnum handguns pack a helluva punch, but kick like a mule and are anything but quiet.  This isn't a gun for any would-be cowboy; it takes a steady hand and some good training to use this weapon effectively. -- Sam Carter"
+beltDescription="MAGNUM"
+
+[WeaponMiniRocket]
+ItemName="Internal Light Anti-Personnel Weapon"
+ItemArticle="an"
+Description="Prior to MJ12 adopting the technology, the ILAW was an abandoned attempt at creating a cybernetic rocket-based weapon.  This prototype has been fitted for external use for demonstration purposes."
+beltDescription="ILAW"
+
+[WeaponModAuto]
+ItemName="Weapon Modification (Rate of Fire)"
+Description="By lubricating key mechanisms many firearms can have their Rate of Fire increased."
+beltDescription="MOD ROF"
+
+[WeaponPrecisionRifle]
+ItemName="Precision Rifle"
+Description="Coupling high accuracy with top-notch internal chambering, the high-speed 'Precision' Rifle minimizes time between shots, making it useful for both long-range sniping and mid-range assault."
+beltDescription="PRECISION"
+
+[WeaponPrototypeSwordA]
+ItemName="Prototype NanoSword (Mk I)"
+Description="The first attempt at creating what would become the Dragon's Tooth Sword used a dramatically different approach, generating a ultrathin stasis field around the blade to effectively amplify momentum and force.  However, the inherent instabilities of the stasis technology caused the approach to be abandoned."
+beltDescription="NANOSWORD"
+
+[WeaponPrototypeSwordB]
+ItemName="Prototype NanoSword (Mk II)"
+Description="The second prototype of the NanoSword technology combined early-gen nanoscale whetting devices with a significantly weaker stasis field, the hope being that the instabilities in the stasis technology could be eliminated by reducing the power of the field.  This proved untrue, and the stasis technology was abandoned completely."
+beltDescription="NANOSWORD"
+
+[WeaponPrototypeSwordC]
+ItemName="Prototype NanoSword (Mk III)"
+Description="The third prototype of what would eventually become the Dragon's Tooth Sword relied on a traditional blade to do the cutting, kept incredibly sharp by nanoscale whetting devices.  Later revisions of these same whetting devices can be found in the current Dragon's Tooth Sword."
+beltDescription="NANOSWORD"
+
+[WeaponRailgun]
+ItemName="Railgun"
+Description="A one-of-a-kind prototype, the Railgun compacts standard plasma slugs into a significantly smaller shape, then magnetically accelerates them to near-light speeds.  The force of the projectile allows it to penetrate multiple objects in succession; to compliment this the Railgun has been equipped with a heat scope."
+beltDescription="RAILGUN"
+
+[WeaponToxinBlade]
+ItemName="Toxin Blade"
+Description="An example of the more deadly uses of nanotechnology, the Toxin Blade is a standard Combat Knife with a paralytic toxin coating.  Nanobots within the weapon ensure that the coating is always replenished, and that the blade remains its sharpest."
+beltDescription="TOXIN"
+
+
+[MenuScreenCustomizeKeys]
+strHeaderActionLabel="Action"
+strHeaderAssignedLabel="Assigned Key/Button"
+WaitingHelpText="Select the function you wish to remap and then press [Enter] or Double-Click.  Press [Delete] to remove key bindings."
+InputHelpText="Please press the key or button you wish to assign to this function.  Press [ESC] to cancel."
+ReassignedFromLabel="'%s' reassigned from '%s'"
+Title="Keyboard/Mouse Settings"
+FunctionText[0]="Fire Weapon/Use object in hand"
+FunctionText[1]="Use object in world"
+FunctionText[2]="Alternate Fire Mode"
+FunctionText[3]="Drop/Throw Item"
+FunctionText[4]="Move Forward"
+FunctionText[5]="Move Backward"
+FunctionText[6]="Turn Left"
+FunctionText[7]="Turn Right"
+FunctionText[8]="Strafe Left"
+FunctionText[9]="Strafe Right"
+FunctionText[10]="Lean Left"
+FunctionText[11]="Lean Right"
+FunctionText[12]="Jump/Mantle"
+FunctionText[13]="Crouch"
+FunctionText[14]="Mouse Look"
+FunctionText[15]="Look Up"
+FunctionText[16]="Look Down"
+FunctionText[17]="Center View"
+FunctionText[18]="Walk/Run"
+FunctionText[19]="Toggle Walk/Run"
+FunctionText[20]="Strafe"
+FunctionText[21]="Select Next Belt Item"
+FunctionText[22]="Select Previous Belt Item"
+FunctionText[23]="Reload Weapon"
+FunctionText[24]="Toggle Scope"
+FunctionText[25]="Toggle Laser Sight"
+FunctionText[26]="Activate All Augmentations"
+FunctionText[27]="Deactivate All Augmentations"
+FunctionText[28]="Change Ammo"
+FunctionText[29]="Take Screenshot"
+FunctionText[30]="Activate Inventory Screen"
+FunctionText[31]="Activate Health Screen"
+FunctionText[32]="Activate Augmentations Screen"
+FunctionText[33]="Activate Skills Screen"
+FunctionText[34]="Activate Goals/Notes Screen"
+FunctionText[35]="Activate Conversations Screen"
+FunctionText[36]="Activate Images Screen"
+FunctionText[37]="Activate Logs Screen"
+FunctionText[38]="Quick Save"
+FunctionText[39]="Quick Load"
+FunctionText[40]="Toggle Crosshairs"
+FunctionText[41]="Toggle Hit Display"
+FunctionText[42]="Toggle Compass"
+FunctionText[43]="Toggle Augmentation Display"
+FunctionText[44]="Toggle Object Belt"
+FunctionText[45]="Toggle Ammo Display"
+keyDisplayNames[0]="(inputKey=IK_LeftMouse,displayName="Left Mouse Button")"
+keyDisplayNames[1]="(inputKey=IK_RightMouse,displayName="Right Mouse Button")"
+keyDisplayNames[2]="(inputKey=IK_MiddleMouse,displayName="Middle Mouse Button")"
+keyDisplayNames[3]="(inputKey=IK_CapsLock,displayName="CAPS Lock")"
+keyDisplayNames[4]="(inputKey=IK_PageUp,displayName="Page Up")"
+keyDisplayNames[5]="(inputKey=IK_PageDown,displayName="Page Down")"
+keyDisplayNames[6]="(inputKey=IK_PrintScrn,displayName="Print Screen")"
+keyDisplayNames[7]="(inputKey=IK_GreyStar,displayName="NumPad Asterisk")"
+keyDisplayNames[8]="(inputKey=IK_GreyPlus,displayName="NumPad Plus")"
+keyDisplayNames[9]="(inputKey=IK_GreyMinus,displayName="NumPad Minus")"
+keyDisplayNames[10]="(inputKey=IK_GreySlash,displayName="NumPad Slash")"
+keyDisplayNames[11]="(inputKey=IK_NumPadPeriod,displayName="NumPad Period")"
+keyDisplayNames[12]="(inputKey=IK_NumLock,displayName="Num Lock")"
+keyDisplayNames[13]="(inputKey=IK_ScrollLock,displayName="Scroll Lock")"
+keyDisplayNames[14]="(inputKey=IK_LShift,displayName="Left Shift")"
+keyDisplayNames[15]="(inputKey=IK_RShift,displayName="Right Shift")"
+keyDisplayNames[16]="(inputKey=IK_LControl,displayName="Left Control")"
+keyDisplayNames[17]="(inputKey=IK_RControl,displayName="Right Control")"
+keyDisplayNames[18]="(inputKey=IK_MouseWheelUp,displayName="Mouse Wheel Up")"
+keyDisplayNames[19]="(inputKey=IK_MouseWheelDown,displayName="Mouse Wheel Down")"
+keyDisplayNames[20]="(inputKey=IK_MouseX,displayName="Mouse X")"
+keyDisplayNames[21]="(inputKey=IK_MouseY,displayName="Mouse Y")"
+keyDisplayNames[22]="(inputKey=IK_MouseZ,displayName="Mouse Z")"
+keyDisplayNames[23]="(inputKey=IK_MouseW,displayName="Mouse W")"
+keyDisplayNames[24]="(inputKey=IK_LeftBracket,displayName="Left Bracket")"
+keyDisplayNames[25]="(inputKey=IK_RightBracket,displayName="Right Bracket")"
+keyDisplayNames[26]="(inputKey=IK_SingleQuote,displayName="Single Quote")"
+keyDisplayNames[27]="(inputKey=IK_Joy1,displayName="Joystick Button 1")"
+keyDisplayNames[28]="(inputKey=IK_Joy2,displayName="Joystick Button 2")"
+keyDisplayNames[29]="(inputKey=IK_Joy3,displayName="Joystick Button 3")"
+keyDisplayNames[30]="(inputKey=IK_Joy4,displayName="Joystick Button 4")"
+keyDisplayNames[31]="(inputKey=IK_JoyX,displayName="Joystick X")"
+keyDisplayNames[32]="(inputKey=IK_JoyY,displayName="Joystick Y")"
+keyDisplayNames[33]="(inputKey=IK_JoyZ,displayName="Joystick Z")"
+keyDisplayNames[34]="(inputKey=IK_JoyR,displayName="Joystick R")"
+keyDisplayNames[35]="(inputKey=IK_JoyU,displayName="Joystick U")"
+keyDisplayNames[36]="(inputKey=IK_JoyV,displayName="Joystick V")"
+keyDisplayNames[37]="(inputKey=IK_JoyPovUp,displayName="Joystick Pov Up")"
+keyDisplayNames[38]="(inputKey=IK_JoyPovDown,displayName="Joystick Pov Down")"
+keyDisplayNames[39]="(inputKey=IK_JoyPovLeft,displayName="Joystick Pov Left")"
+keyDisplayNames[40]="(inputKey=IK_JoyPovRight,displayName="Joystick Pov Right")"
+keyDisplayNames[41]="(inputKey=IK_Ctrl,displayName="Control")"
+keyDisplayNames[42]="(inputKey=IK_Left,displayName="Left Arrow")"
+keyDisplayNames[43]="(inputKey=IK_Right,displayName="Right Arrow")"
+keyDisplayNames[44]="(inputKey=IK_Up,displayName="Up Arrow")"
+keyDisplayNames[45]="(inputKey=IK_Down,displayName="Down Arrow")"
+keyDisplayNames[46]="(inputKey=IK_Insert,displayName="Insert")"
+keyDisplayNames[47]="(inputKey=IK_Home,displayName="Home")"
+keyDisplayNames[48]="(inputKey=IK_Delete,displayName="Delete")"
+keyDisplayNames[49]="(inputKey=IK_End,displayName="End")"
+keyDisplayNames[50]="(inputKey=IK_NumPad0,displayName="NumPad 0")"
+keyDisplayNames[51]="(inputKey=IK_NumPad1,displayName="NumPad 1")"
+keyDisplayNames[52]="(inputKey=IK_NumPad2,displayName="NumPad 2")"
+keyDisplayNames[53]="(inputKey=IK_NumPad3,displayName="NumPad 3")"
+keyDisplayNames[54]="(inputKey=IK_NumPad4,displayName="NumPad 4")"
+keyDisplayNames[55]="(inputKey=IK_NumPad5,displayName="NumPad 5")"
+keyDisplayNames[56]="(inputKey=IK_NumPad6,displayName="NumPad 6")"
+keyDisplayNames[57]="(inputKey=IK_NumPad7,displayName="NumPad 7")"
+keyDisplayNames[58]="(inputKey=IK_NumPad8,displayName="NumPad 8")"
+keyDisplayNames[59]="(inputKey=IK_NumPad9,displayName="NumPad 9")"
+keyDisplayNames[60]="(inputKey=IK_Period,displayName="Period")"
+keyDisplayNames[61]="(inputKey=IK_Comma,displayName="Comma")"
+keyDisplayNames[62]="(inputKey=IK_Backslash,displayName="Backslash")"
+keyDisplayNames[63]="(inputKey=IK_Semicolon,displayName="Semicolon")"
+keyDisplayNames[64]="(inputKey=IK_Equals,displayName="Equals")"
+keyDisplayNames[65]="(inputKey=IK_Slash,displayName="Slash")"
+keyDisplayNames[66]="(inputKey=IK_Enter,displayName="Enter")"
+keyDisplayNames[67]="(inputKey=IK_Alt,displayName="Alt")"
+keyDisplayNames[68]="(inputKey=IK_Backspace,displayName="Backspace")"
+keyDisplayNames[69]="(inputKey=IK_Shift,displayName="Shift")"
+keyDisplayNames[70]="(inputKey=IK_Space,displayName="Space")"
+actionButtons[0]="(Align=HALIGN_Right,Action=AB_Cancel)"
+actionButtons[1]="(Align=HALIGN_Right,Action=AB_OK)"
+actionButtons[2]="(Action=AB_Reset)"
+NoneText="[None]"
+FunctionText[46]="F3"
+FunctionText[47]="F4"
+FunctionText[48]="F5"
+FunctionText[49]="F6"
+FunctionText[50]="F7"
+FunctionText[51]="F8"
+FunctionText[52]="F9"
+FunctionText[53]="F10"
+FunctionText[54]="F11"
+FunctionText[55]="F12"
+FunctionText[56]="Show Multiplayer Scores"
+FunctionText[57]="Send Message To Team"
+FunctionText[58]="Send Message To All"
+FunctionText[59]="Activate Multiplayer Skill Menu"
+FunctionText[60]="Show Multiplayer Kill Details"
+FunctionText[61]="Put Away Item"
+
+[HUDMedBotAddAugsScreen]
+AvailableAugsText="Available Augmentations"
+MedbotInterfaceText="MEDBOT INTERFACE"
+InstallButtonLabel="|&Install"
+UpgradeButtonLabel="|&Upgrade"
+NoCansAvailableText="No Augmentation Canisters Available!"
+AlreadyHasItText="You already have this augmentation, therefore you cannot install it a second time."
+SlotFullText="The slot that this augmentation occupies is already full. To install you must replace an exisiting augmentation."
+SelectAnotherText="Please select another augmentation to install."
+MayUpgradeText="You may upgrade this augmentation instead."
+CannotUpgradeText="This augmentation is at its maximum level and cannot be upgraded."
+SelectReplaceText="Select the augmentation to replace.  The augmentation must be in the %s slot."
+UpgradedText="Augmentation upgraded to level %d."
+InstalledText="Augmentation installed."
+
+[VendingMachine]
+msgDispensed="%d credits deducted from your account"
+msgNoCredits="Costs %d credits..."
+msgEmpty="It's empty"
+ItemName="Vending Machine"
+CostUnit="credits"
+
+[CigaretteMachine]
+msgDispensed="%d credits deducted from your account"
+msgNoCredits="Costs %d credits..."
+msgEmpty="It's empty"
+ItemName="Cigarette Machine"
+CostUnits="credits"
+
+[AugMuscle]
+AugmentationName="Microfibral Muscle"
+Description="Muscle strength is amplified with ionic polymeric gel myofibrils that allow the agent to push and lift extraordinarily heavy objects and boost hand-to-hand combat strength.|n|nTECH ONE: Strength is increased slightly.|n|nTECH TWO: Strength is increased moderately.|n|nTECH THREE: Strength is increased significantly.|n|nTECH FOUR: An agent is inhumanly strong."
+MPInfo="When active, you can pick up large crates and combat damage is doubled.  Energy Drain: Low"
+
+[VialCrack]
+ItemName="Zyme Vial"
+Description="A vial of zyme, brewed up in some basement lab.|n|n<UNATCO OPS FILE NOTE JR127-VIOLET>Zyme was once considered for distribution to agents in the field as an emergency ability-booster, but the significant after-effects were determined to be too prolonged for Zyme to be effective for in-field use. -- Jaime Reyes <END NOTE>"
+beltDescription="ZYME"
+
+[Toilet]
+ItemName="Toilet"
+unflushedString="Unflushed"
+awardString="Public Hygene Awareness Bonus"
+
+[AugHeartLung]
+AugmentationName="Synthetic Heart"
+Description="This synthetic heart circulates not only blood but a steady concentration of mechanochemical power cells, smart phagocytes, and liposomes containing prefab diamondoid machine parts, resulting in upgraded performance for all installed augmentations.|n|n<UNATCO OPS FILE NOTE JR133-VIOLET> Though untested, this may enhance an augmentation past its maximum upgrade level. -- Jaime Reyes <END NOTE>|n|nNO UPGRADES"
+
+[menuchoice_class]
+ClassNames[0]="JC Denton"
+ClassNames[1]="NSF Terrorist"
+ClassNames[2]="UNATCO Trooper"
+ClassNames[3]="Majestic-12 Agent"
+ClassNames[4]="Toby Atanwe"
+ClassNames[5]="Bartender"
+ClassNames[6]="Boat Person"
+ClassNames[7]="Businessman (1)"
+ClassNames[8]="Businessman (2)"
+ClassNames[9]="Businessman (3)"
+ClassNames[10]="Businesswoman"
+ClassNames[11]="Butler"
+ClassNames[12]="Sam Carter"
+ClassNames[13]="Chef"
+ClassNames[14]="Max Chen"
+ClassNames[15]="Child (1)"
+ClassNames[16]="Child (2)"
+ClassNames[17]="Chinese Military"
+ClassNames[18]="Maggie Chow"
+ClassNames[19]="Paul Denton"
+ClassNames[20]="Doctor"
+ClassNames[21]="Stanton Dowd"
+ClassNames[22]="Nicolette DuClare"
+ClassNames[23]="Chad Dumier"
+ClassNames[24]="Morgan Everett"
+ClassNames[25]="Female (1)"
+ClassNames[26]="Female (2)"
+ClassNames[27]="Female (3)"
+ClassNames[28]="Female (4)"
+ClassNames[29]="Female Bum"
+ClassNames[30]="Female Junkie"
+ClassNames[31]="Female Scientist"
+ClassNames[32]="Harley Filben"
+ClassNames[33]="Jojo Fine"
+ClassNames[34]="Joe Greene"
+ClassNames[35]="Michael Hamner"
+ClassNames[36]="Gunther Hermann"
+ClassNames[37]="Hooker (1)"
+ClassNames[38]="Hooker (2)"
+ClassNames[39]="Alex Jacobson"
+ClassNames[40]="Janitor"
+ClassNames[41]="Jock"
+ClassNames[42]="Juan Lebedev"
+ClassNames[43]="Luminous Path (1)"
+ClassNames[44]="Luminous Path (2)"
+ClassNames[45]="Nathan Madison"
+ClassNames[46]="Maid"
+ClassNames[47]="Male (1)"
+ClassNames[48]="Male (2)"
+ClassNames[49]="Male (3)"
+ClassNames[50]="Male (4)"
+ClassNames[51]="Male Bum (1)"
+ClassNames[52]="Male Bum (2)"
+ClassNames[53]="Male Bum (3)"
+ClassNames[54]="Male Junkie"
+ClassNames[55]="Male Scientist"
+ClassNames[56]="Male Thug (1)"
+ClassNames[57]="Male Thug (2)"
+ClassNames[58]="Male Thug (3)"
+ClassNames[59]="Man In Black"
+ClassNames[60]="Joseph Manderley"
+ClassNames[61]="Majestic-12 Commando"
+ClassNames[62]="Philip Mead"
+ClassNames[63]="Rachel Mead"
+ClassNames[64]="Sarah Mead"
+ClassNames[65]="Mechanic"
+ClassNames[66]="Anna Navarre"
+ClassNames[67]="Nurse"
+ClassNames[68]="Bob Page"
+ClassNames[69]="Police Officer"
+ClassNames[70]="Poor Man (1)"
+ClassNames[71]="Poor Man (2)"
+ClassNames[72]="Poor Woman"
+ClassNames[73]="Gordon Quick"
+ClassNames[74]="Red Arrow"
+ClassNames[75]="Gilbert Renton"
+ClassNames[76]="Sandra Renton"
+ClassNames[77]="Jaime Reyes"
+ClassNames[78]="Riot Cop"
+ClassNames[79]="Gary Savage"
+ClassNames[80]="Tiffany Savage"
+ClassNames[81]="Sailor"
+ClassNames[82]="Ford Schick"
+ClassNames[83]="Scuba Diver"
+ClassNames[84]="Secret Service"
+ClassNames[85]="Secretary"
+ClassNames[86]="Jordan Shea"
+ClassNames[87]="Walton Simons"
+ClassNames[88]="Smuggler"
+ClassNames[89]="Soldier"
+ClassNames[90]="Howard Strong"
+ClassNames[91]="Tracer Tong"
+ClassNames[92]="Margaret Williams"
+ClassNames[93]="Woman In Black"
+HelpText="Model for your character in non-team games."
+actionText="Non-Team Model"
+
+[WeaponAssaultShotgun]
+ItemName="Assault Shotgun"
+ItemArticle="an"
+Description="The assault shotgun (sometimes referred to as a 'street sweeper') combines the best traits of a normal shotgun with a fully automatic feed that can clear an area of hostiles in a matter of seconds. Particularly effective in urban combat, the assault shotgun accepts either buckshot or sabot shells."
+beltDescription="SHOTGUN"
+msgExtraShells="%d rounds loaded into firing chamber"
+
+[WeaponSawedOffShotgun]
+ItemName="Sawed-off Shotgun"
+Description="The sawed-off, pump-action shotgun features a truncated barrel resulting in a wide spread at close range and will accept either buckshot or sabot shells."
+beltDescription="SAWED-OFF"
+msgExtraShells="%d rounds loaded into firing chamber"
+
+[DeusExPickup]
+CountLabel="COUNT:"
+msgTooMany="You can't carry any more of those"
+PickupMessage="You found"
+ItemName="DEFAULT PICKUP NAME - REPORT THIS AS A BUG"
+SwitchingTo="Switching to %s"
+OutOf="Out of %s"
+
+[Sodacan]
+ItemName="Soda"
+ItemArticle="some"
+Description="The can is blank except for the phrase 'PRODUCT PLACEMENT HERE.' It is unclear whether this is a name or an invitation."
+beltDescription="SODA"
+InvDescription[0]="The can is blank except for the phrase 'PRODUCT PLACEMENT HERE.' It is unclear whether this is a name or an invitation."
+InvDescription[1]="A can of Zap! soda.  The label reads: '50% more effective than Nuke!'"
+InvDescription[2]="The only easily visible item is the letter 'B' printed on the front.  The small information label reads 'Beats out Zap! by a factor of 1.3333333333333333333333333333333333....'|n|nThe numbers keep repeating and appear to take up the remaining space on the label."
+InvDescription[3]="Aside from the bold-face title the can appears to be blank.  Closer inspection shows the original printing has been removed and a new name printed on top.  The words 'got Electrolytes' and 'Thirst Mutilator' are still barely visible."
+
+[Mission03]
+VoIPText="Display VoIP status and details"
+VoIPTText="VoIP session active on telephony node"
+VoIPNText="No VoIP sessions currently active"
+VoIPJoin="VoIP socket connection established via datalink"
+emailSubject[0]="Please help us keep your office clean"
+emailString[0]="Agent Denton,|n|n     Welcome to UNATCO!  Allow me to introduce myself: I'm Dan, the head of Janitorial Services here at HQ.|n|n     Let me cut to the chase: the Janitorial Services Department is not as well-equipped as I would like it.  Rather than the industrial cleaning robots you find in the private sector, we're only able to get the basic model.  ('Budget considerations', Manderley says)  This model has no real pushing power and is impossible to reprogram.  If anybody leaves something heavier than a desk chair on the floor the little things burn out trying to push it out of the way to clean, which is exactly what happened in your office.  Three of our cleaning bots had to have their drive motors replaced after trying to push that... thing up against the shelf in your office.|n|n     As this happened on your first day I can't blame you for not knowing, but in the future please try not to leave anything heavy on the floor of your office.|n|n|nThanks,|n|nDaniel Matsuma|nHead of Janitorial Services|n453-0782"
+
+[Mission04]
+emailSubject[0]="Please help us keep your office clean"
+emailString[0]="Agent Denton,|n|n     Welcome to UNATCO!  Allow me to introduce myself: I'm Dan, the head of Janitorial Services here at HQ.|n|n     Let me cut to the chase: the Janitorial Services Department is not as well-equipped as I would like it.  Rather than the industrial cleaning robots you find in the private sector, we're only able to get the basic model.  ('Budget considerations', Manderley says)  This model has no real pushing power and is impossible to reprogram.  If anybody leaves something heavier than a desk chair on the floor the little things burn out trying to push it out of the way to clean, which is exactly what happened in your office.  Three of our cleaning bots had to have their drive motors replaced after trying to push that... thing up against the shelf in your office.|n|n     Since you're new here I can't blame you for not knowing, but in the future please try not to leave anything heavy on the floor of your office.|n|n|nThanks,|n|nDaniel Matsuma|nHead of Janitorial Services|n453-0782"
+emailSubject[1]="About your office..."
+emailString[1]="Agent Denton,|n|n     I have to apologize for the 'unusual' state of your office.  It appears that one of our cleaning bots malfunctioned and for some reason decided to push all the trash it could find into your office.  I would have stopped the little thing before it made a real mess, but I was too busy trying to repair the four other cleaning bots which burned out after trying to push more of the heavy items you left on the floor.|n|n     I will have your office cleaned when time permits, but these repairs will take some time and they do come first.  Perhaps in the future you will heed my warnings about what you can and cannot leave on the floor.|n|n|nDaniel Matsuma|nHead of Janitorial Services|n453-0782"
+
+[Mission05]
+emailSubject[0]="Augmentation shipment mixup"
+emailString[0]="Gunther,|n|n     Our latest supply shipment just came in, but your part of the shipment was missing.  Instead of an augmentation canister, the package contained a single can of lemon-lime soda.  I've already talked to the supply depot; they don't know what happened to the first shipment, but another is on the way.  It should be here in a few days.|n|n|nJaime"
+emailString[1]="Agent Denton,|n|n     My name is Dan Matsuma.  You don't know me, but I'm the head of Janitorial Services here.  (Was, anyway)  If you're reading this then my efforts weren't wasted.|n|n     You're a good man, Agent Denton, and I don't believe you're a traitor.  That the Coalition would brand you and your brother as such is the latest in a string of disturbing things I've seen.  Enough is enough.  Even janitors can make a stand for what's right.  I've managed to 're-direct' the stuff those goons confiscated from your office, and I've stashed it in the cleaning closet on this floor.  Hopefully some of it will be of help.|n|n     To set your mind at ease, Agent Denton, (and to anybody else reading this) I will be on my way out of the country by the time you read this note.  Consider this my official resignation.|n|n|nSincerely,|nDaniel Matsuma|n|nP.S. Manderley, if you're reading this, I was the one who blocked off your hidden safe.  I never bought that 'budget considerations' excuse, you prick."
+emailString[2]="Agent Denton,|n|n     Dan Matsuma here.  I know we've had our differences, but I write to you as a friend.  If you're reading this then my efforts weren't wasted.|n|n     Cleaning habits aside you're a good man, Agent Denton, and I don't believe you're a traitor.  That the Coalition would brand you and your brother as such is the latest in a string of disturbing things I've seen.  Enough is enough.  Even janitors can make a stand for what's right.  I've managed to 're-direct' the stuff those goons confiscated from your office, and I've stashed it in the cleaning closet on this floor.  Hopefully some of it will be of help.|n|n     To set your mind at ease, Agent Denton, (and to anybody else reading this) I will be on my way out of the country by the time you read this note.  Consider this my official resignation.|n|n|nSincerely,|nDaniel Matsuma|n|nP.S. Manderley, if you're reading this, I was the one who blocked off your hidden safe.  I never bought that 'budget considerations' excuse, you prick."
+emailString[3]="******* UNATCO INTERNAL MAIL AUTOMATED FORWARDING NOTICE|n|nTHIS PARCEL WAS RE-ROUTED TO THE MOST RECENT ADDRESS OF RECIPIENT 'JC Denton'.  IF YOU ARE NOT 'JC Denton' PLEASE CONTACT YOUR STATION POSTMASTER.|n|n******* END NOTICE|n|n|nDear Jackass,|n|n     Today Manderley told me my department is overbudget due to an increase in requisitions for cleaning bot drive motors.  'The money has to be made up somewhere', so now I'm working unpaid overtime for the next six months.  THANKS TO YOU.|n|n     As compensation I'm taking a few items from your office, and having this sent to your new office instead.  Maybe when this note arrives in Hong Kong instead of that giant whatever-it-is you'll think twice before tormenting the next janitorial staff unfortunate enough to be saddled with you.  If there were any justice in the world though, you'd be declared a traitor so I'd be legally allowed to shoot you.|n|n     Die in a fire.|n|n|nDaniel Matsuma,|nHead of Janitorial Services"
+
+[AmmoDragon]
+ItemName="Dragon's Breath Shells"
+Description="Highly specialized shells containing a powdered mix of fuel and heat-sensitive igntion agent, exiting in the form of a large burst of flame when fired."
+beltDescription="DRAGON"
+
+[AugLight]
+AugmentationName="Light"
+Description="Bioluminescent cells within the retina provide coherent illumination of the agent's field of view.  Upgrades increase the intensity of the light emitted, improving the maximum effective distance and radius.|n|nTHREE UPGRADES"
+
+[AugIFF]
+AugmentationName="IFF"
+Description="Automatic friend or foe identification uses advanced heuristic algorithms to associate visible objects with known threat categories.|n|nTargeting reticle highlights RED over enemies, GREEN over allies, and BLUE over neutrals.|n|nNO UPGRADES"
+
+[Mission02]
+emailString[0]="|n|nP.S. You've managed to keep the casualties to a minimum so far, but I know it hasn't been easy.  I've left you a baton I modified that should make the use of minimal force less challenging."
+
+[Containers]
+ContainerEmpty="You don't find anything"
+ContainerDiscard="You discard"
+ContainerFound="You found:"
+
+[DeusExCarcass]
+msgSearching="You found:"
+msgEmpty="You don't find anything"
+msgNotDead="Unconscious"
+msgAnimalCarcass="Animal Carcass"
+msgCannotPickup="You cannot pickup the %s"
+ItemName="Dead Body"
+msgRecharged="Recharged %d points"
+msgCombatDiscard="You discarded a Combat Knife (You have a better melee weapon)"
