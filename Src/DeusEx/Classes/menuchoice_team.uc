@@ -173,8 +173,6 @@ defaultproperties
      TeamNames(0)="UNATCO"
      TeamNames(1)="NSF"
      TeamNames(2)="AUTO"
-     // 08.03.2018
-     // FIX chybejicich textur v menu
      texPortraits(0)=Texture'CZAnniversaryUI.UserInterface.menuplayersetupunatco'
      texPortraits(1)=Texture'CZAnniversaryUI.UserInterface.menuplayersetupnsf'
      texPortraits(2)=Texture'CZAnniversaryUI.UserInterface.menuplayersetupautoteam'
