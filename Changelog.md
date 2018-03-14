@@ -1,5 +1,8 @@
 ## Změny a úpravy českého překladu a modu
 
+_v1.0001b - 14.03.2018_
+- **PŘIDÁNO**: Addon NanoMod, vypnutí MultiPlayeru
+
 _v1.0001a - 08.03.2018_
 - **OPRAVENO**: Chybějící textury v menu
 - **PŘIDÁNO**: Obarvení Deus Ex loga v menu na podobu České vlajky
