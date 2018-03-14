@@ -238,8 +238,6 @@ defaultproperties
      Title="Host Multiplayer Game"
      ClientWidth=461
      ClientHeight=427
-     // 08.03.2018
-     // FIX chybejicich textur v menu
      clientTextures(0)=Texture'CZAnniversaryUI.UserInterface.MenuHostBackground_1'
      clientTextures(1)=Texture'CZAnniversaryUI.UserInterface.MenuHostBackground_2'
      clientTextures(2)=Texture'CZAnniversaryUI.UserInterface.MenuHostBackground_3'
