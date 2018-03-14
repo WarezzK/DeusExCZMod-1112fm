@@ -6,7 +6,7 @@ class HUDObjectSlot expands ToggleWindow;
 var DeusExPlayer player;
 
 var int			objectNum;
-var Inventory	item;
+var Inventory		item;
 var Color		colObjectNum;
 var Color		colObjectDesc;
 var Color		colOutline;
@@ -15,11 +15,11 @@ var Color		colDropGood;
 var Color		colDropBad;
 var Color		colNone;
 var Color		colSelected;
-var Color       colSelectionBorder;
+var Color       	colSelectionBorder;
 var int			slotFillWidth;
 var int			slotFillHeight;
-var int         borderWidth;
-var int         borderHeight;
+var int         	borderWidth;
+var int         	borderHeight;
 
 // Stuff to optimize DrawWindow()
 var String      itemText;
@@ -64,6 +64,14 @@ var Texture texBorders[9];
 var localized String RoundLabel;
 var localized String RoundsLabel;
 var localized String CountLabel;
+
+//== We need to have the server track what's in what slots due to Shifter's new method
+replication
+{
+	reliable if ( player.Role == ROLE_Authority )
+		item;
+
+}
 
 // ----------------------------------------------------------------------
 // InitWindow()
@@ -160,10 +168,8 @@ function UpdateItemText()
 				itemText = weapon.AmmoType.beltDescription;
 
 			// If this is a grenade
-			if (weapon.IsA('WeaponNanoVirusGrenade') || 
-				weapon.IsA('WeaponGasGrenade') || 
-				weapon.IsA('WeaponEMPGrenade') ||
-				weapon.IsA('WeaponLAM'))
+			if (weapon.IsA('WeaponGrenade') ||
+				weapon.IsA('WeaponHideAGun'))
 			{
 				if (weapon.AmmoType.AmmoAmount > 1)
 					itemText = CountLabel @ weapon.AmmoType.AmmoAmount;
@@ -195,8 +201,10 @@ function Inventory GetItem()
 
 event DrawWindow(GC gc)
 {
+	local Color amColor;
+	
 	// First draw the background
-   DrawHUDBackground(gc);
+   	DrawHUDBackground(gc);
 
 	// Now fill the area under the icon, which can be different 
 	// colors based on the state of the item.
@@ -219,11 +227,20 @@ event DrawWindow(GC gc)
 	if ((item != None) && (item.Icon != None) && (!bDragging))
 	{
 		// Draw the icon
-      DrawHUDIcon(gc);
+      		DrawHUDIcon(gc);
 
 		// Text defaults
 		gc.SetAlignments(HALIGN_Center, VALIGN_Center);
 		gc.EnableWordWrap(false);
+		
+		if (player != None && DeusExWeapon(item) != None && DeusExWeapon(item).AmmoType != None)
+        {
+			amColor = player.NanoMod.getAmmoTextColor(DeusExWeapon(item).AmmoName, colObjectNum);
+			
+			gc.SetTextColor(amColor);
+		}
+		
+		else
 		gc.SetTextColor(colObjectNum);
 
 		// Draw the item description at the bottom
@@ -248,15 +265,20 @@ event DrawWindow(GC gc)
 		gc.EnableWordWrap(false);
 		gc.SetTextColor(colObjectNum);
 
-		if ((objectNum >=1) && (objectNum <=3))
+      //This bit modified for new MP stuff -- Y|yukichigai
+      if ((objectNum >=1) && (objectNum <=6)) //((objectNum >=1) && (objectNum <=3))
       {
          gc.DrawText(1, 42, 42, 7, "WEAPONS");
       }
-      else if ((objectNum >=4) && (objectNum <=6))
+      else if (objectNum == 7) //((objectNum >=4) && (objectNum <=6))
       {
          gc.DrawText(1, 42, 42, 7, "GRENADES");
       }
-      else if ( ((objectNum >=7) && (objectNum <=9)) || (objectNum == 0) )
+      else if (objectNum == 8) //Added
+      {
+         gc.DrawText(1, 42, 42, 7, "MEDICAL");
+      }
+      else if (objectNum == 9 || objectNum == 0) //( ((objectNum >=7) && (objectNum <=9)) || (objectNum == 0) )
       {
          gc.DrawText(1, 42, 42, 7, "TOOLS");
       }
@@ -292,7 +314,8 @@ function DrawHUDBackground(GC gc)
 
    // DEUS_EX AMSD Warning.  This background delineates specific item locations on the belt, which
    // are usually only known to the items themselves.
-   if ( (player != None) && (Player.Level.Netmode != NM_Standalone) && (Player.bBeltIsMPInventory) && ((objectNum == 3) || (objectNum == 6)) )
+   //=== That has changed since.  There's only need for one border now -- Y|yukichigai
+   if ( (player != None) && (Player.Level.Netmode != NM_Standalone) && (Player.bBeltIsMPInventory) && (objectNum == 6)) //|| (objectNum == 3)
    {
       gc.DrawTexture(0, 0, width, height, 0, 0, mpBorderTex);
    }
@@ -569,8 +592,6 @@ defaultproperties
      slotNumberX=38
      slotNumberY=3
      texBackground=Texture'DeusExUI.UserInterface.HUDObjectBeltBackground_Cell'
-     // 08.03.2018
-     // FIX chybejicich textur v menu
      mpBorderTex=Texture'CZAnniversaryUI.UserInterface.HUDObjectBeltBackground_Divider'
      texBorders(0)=Texture'DeusExUI.UserInterface.PersonaItemHighlight_TL'
      texBorders(1)=Texture'DeusExUI.UserInterface.PersonaItemHighlight_TR'
