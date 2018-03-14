@@ -216,8 +216,6 @@ defaultproperties
      Title="Multiplayer Player Setup"
      ClientWidth=343
      ClientHeight=415
-     // 08.03.2018
-     // FIX chybejicich textur v menu
      clientTextures(0)=Texture'CZAnniversaryUI.UserInterface.MenuPlayerSetupBackground_1'
      clientTextures(1)=Texture'CZAnniversaryUI.UserInterface.MenuPlayerSetupBackground_2'
      clientTextures(2)=Texture'CZAnniversaryUI.UserInterface.MenuPlayerSetupBackground_3'
