@@ -964,8 +964,6 @@ defaultproperties
      Title="Start Multiplayer Game"
      ClientWidth=614
      ClientHeight=420
-     // 08.03.2018
-     // FIX chybejicich textur v menu
      clientTextures(0)=Texture'CZAnniversaryUI.UserInterface.MenuJoinBackground_1'
      clientTextures(1)=Texture'CZAnniversaryUI.UserInterface.MenuJoinBackground_2'
      clientTextures(2)=Texture'CZAnniversaryUI.UserInterface.MenuJoinBackground_3'
